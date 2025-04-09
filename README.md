@@ -28,14 +28,13 @@ Before running this project, you need to have **FFmpeg** installed on your syste
       ```bash
       scoop install ffmpeg
       ```
-      You can find more information about Scoop at [https://scoop.sh/](https://scoop.sh/).
   2.  **Manual Installation:**
       1.  Go to the official FFmpeg website: [https://ffmpeg.org/download.html](https://ffmpeg.org/download.html).
       2.  Download the appropriate pre-built binaries for Windows.
       3.  Extract the downloaded archive to a directory of your choice (e.g., `C:\ffmpeg`).
       4.  Add the `bin` directory within the extracted folder (e.g., `C:\ffmpeg\bin`) to your system's PATH environment variable. This allows you to run the `ffmpeg` command from any terminal.
 
-## Installation
+### Project Installation
 
 Follow these steps to set up the project:
 
@@ -51,13 +50,24 @@ Follow these steps to set up the project:
     npm install
     ```
 
-## Running the Application
+### Running the Application
 
 ```bash
 npm run start # run in production mode
 npm run start:dev # run in dev mode with watch
 npm run start:debug # run in dev mode with watch and debug
 ```
+
+## Run with docker
+
+```bash
+docker build -t video-to-streaming-format .
+docker run -d -p 3000:3000 video-to-streaming-format
+```
+
+## Add video to public
+
+Add your video to **public** folder and rename it to **video.mp4**
 
 ## Make a request
 
