@@ -75,6 +75,7 @@ Make a get request on **http://localhost:3000** or if you want to test your serv
 
 # Result
 
-| Machine             | RAM   | Time     |
-| ------------------- | ----- | -------- |
-| Netcup VPS 500 G11s | 900MB | 00:01:35 |
+| Machine             | RAM    | Time     |
+| ------------------- | ------ | -------- |
+| Netcup VPS 500 G11s | 900MB  | 00:01:35 |
+| Intel 12700h        | 1660MB | 00:00:54 |
